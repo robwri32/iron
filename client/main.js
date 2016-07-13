@@ -12,6 +12,9 @@ Router.route('/', function () {
 Router.route('/about/', function () {
   this.layout('ApplicationLayout');
     this.render('about');
+    var autotrader = require('./pup.json'); //with path
+    console.log (autotrader)
+    
 });
 
 Router.route('/leaderboard/', function () {
